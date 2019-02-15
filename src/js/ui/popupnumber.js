@@ -29,14 +29,26 @@ module.exports = class PopupNumbers {
       } else {
         $cell.removeClass('empty')
           .text($span.text())
+        this._$container.children()
+          .each((rowIndex, div) => {
+            $(div).children().each((colIndex, span) => {
+              const $span = $(span)
+              if ($cell.text() === $span.text()) {
+                $(span).addClass('markText')
+              } else {
+                $(span).removeClass('markText')
+              }
+            })
+          })
       }
 
       this.hide()
     })
   }
 
-  popup ($cell) {
+  popup ($container, $cell) {
     this._$taegetCell = $cell
+    this._$container = $container
     const { left, top} = $cell.position()
     this._$panel
       .css({

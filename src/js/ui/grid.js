@@ -63,7 +63,7 @@ class Grid {
           })
         return
       }
-      popupNumbers.popup($cell)
+      popupNumbers.popup(this._$container, $cell)
     })
   }
 

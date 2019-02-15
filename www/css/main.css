@@ -39,10 +39,12 @@ body .container .row > span {
   width: 10%;
   height: 24px;
   line-height: 24px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffa042;
   background: #fff;
   border-right-width: 0;
   border-bottom-width: 0;
+  color: forestgreen;
+  font-weight: bolder;
 }
 body .container .row > span:first-child {
   border-left-width: 2px;
@@ -57,7 +59,8 @@ body .container .row > span.empty {
   color: transparent;
 }
 body .container .row > span.tips {
-  background: #f5f5f5;
+  color: firebrick;
+  font-weight: bolder;
 }
 body .container .row > span.mark1 {
   background: lightgreen;
@@ -65,15 +68,14 @@ body .container .row > span.mark1 {
 body .container .row > span.mark2 {
   background: lightblue;
 }
+body .container .row > span.markText {
+  background: #ffa042;
+}
 body .container .row > span.error {
   background: lightpink;
 }
 body .container .row > span.error.empty {
   color: lightpink;
-}
-body .container .row > span.markText {
-  color: lightcoral;
-  background: lightyellow;
 }
 body .container .row.row_g_bottom > span {
   border-bottom-width: 1px;
@@ -109,7 +111,7 @@ body .dashboard .buttons button {
   font-family: '微软雅黑';
   color: #fff;
   background: transparent;
-  border: 1px solid #ccc;
+  border: 1px solid #ffa042;
   border-right-width: 0;
 }
 body .dashboard .buttons button:last-child {
@@ -127,10 +129,12 @@ body .popup-num .row > span {
   width: 10%;
   height: 24px;
   line-height: 24px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffa042;
   background: #fff;
   border-right-width: 0;
   border-bottom-width: 0;
+  color: forestgreen;
+  font-weight: bolder;
 }
 body .popup-num .row > span:first-child {
   border-left-width: 2px;
@@ -145,7 +149,8 @@ body .popup-num .row > span.empty {
   color: transparent;
 }
 body .popup-num .row > span.tips {
-  background: #f5f5f5;
+  color: firebrick;
+  font-weight: bolder;
 }
 body .popup-num .row > span.mark1 {
   background: lightgreen;
@@ -153,15 +158,14 @@ body .popup-num .row > span.mark1 {
 body .popup-num .row > span.mark2 {
   background: lightblue;
 }
+body .popup-num .row > span.markText {
+  background: #ffa042;
+}
 body .popup-num .row > span.error {
   background: lightpink;
 }
 body .popup-num .row > span.error.empty {
   color: lightpink;
-}
-body .popup-num .row > span.markText {
-  color: lightcoral;
-  background: lightyellow;
 }
 body .popup-num .row.row_g_bottom > span {
   border-bottom-width: 1px;

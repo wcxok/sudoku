@@ -71,6 +71,10 @@ body .container .row > span.error {
 body .container .row > span.error.empty {
   color: lightpink;
 }
+body .container .row > span.markText {
+  color: lightcoral;
+  background: lightyellow;
+}
 body .container .row.row_g_bottom > span {
   border-bottom-width: 1px;
 }
@@ -154,6 +158,10 @@ body .popup-num .row > span.error {
 }
 body .popup-num .row > span.error.empty {
   color: lightpink;
+}
+body .popup-num .row > span.markText {
+  color: lightcoral;
+  background: lightyellow;
 }
 body .popup-num .row.row_g_bottom > span {
   border-bottom-width: 1px;

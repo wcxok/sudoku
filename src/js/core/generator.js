@@ -59,9 +59,3 @@ module.exports = class Generator {
     return false
   }
 }
-
-
-//
-// const generator = new Generator()
-// generator.generate()
-// console.log(generator.matrix)

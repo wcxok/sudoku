@@ -48,7 +48,21 @@ class Grid {
   bindPopup (popupNumbers) {
     this._$container.on('click', 'span', e => {
       const $cell = $(e.target)
-      if ($cell.is('.tips')) return
+      if ($cell.is('.tips')) {
+        // 所点击的数字与数独中其他的数字相同的全部标记出来
+        this._$container.children()
+          .each((rowIndex, div) => {
+            $(div).children().each((colIndex, span) => {
+              const $span = $(span)
+              if ($cell.text() === $span.text()) {
+                $(span).addClass('markText')
+              } else {
+                $(span).removeClass('markText')
+              }
+            })
+          })
+        return
+      }
       popupNumbers.popup($cell)
     })
   }
@@ -85,7 +99,6 @@ class Grid {
           } else {
             $(span).addClass('error')
           }
-
         })
       })
   }
